@@ -7,30 +7,33 @@ namespace Crack_IT_System.Controller {
 	internal class ElectricityController {
 		private readonly ElectricityRepository _electricityRepo;
 
+
 		internal ElectricityController() {
 			_electricityRepo = new();
 		}
 
+
 		internal async Task<IList<Miejscowosci>> LoadCities() {
-			var a = await _electricityRepo.SelectCities()
+			var query = await _electricityRepo.SelectCities()
 				.ToListAsync();
 
-			foreach (var city in a) {
+			foreach (var city in query) {
 				Debug.WriteLine($"{city.Id} - {city.Nazwa}");
 			}
 
-			return a;
+			return query;
 		}
 
+
 		internal async Task<IList<Kraje>> LoadCountries() {
-			var a = await _electricityRepo.SelectCountries()
+			var query = await _electricityRepo.SelectCountries()
 				.ToListAsync();
 
-			foreach (var country in a) {
+			foreach (var country in query) {
 				Debug.WriteLine($"{country.Id} - {country.Nazwa}");
 			}
 
-			return a;
+			return query;
 		}
 	}
 }
