@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Crack_IT_System.Model {
+	[Table("miejscowosci")]
 	internal class Miejscowosci {
 		[Key]
 		public uint Id { get; set; }
