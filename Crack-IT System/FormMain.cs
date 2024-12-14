@@ -5,7 +5,7 @@ namespace Crack_IT_System {
 		}
 
 		private void FormMain_Load(object sender, EventArgs e) {
-			MessageBox.Show("ok");
+			//MessageBox.Show("ok");
 		}
 	}
 }
