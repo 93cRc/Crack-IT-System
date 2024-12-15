@@ -17,10 +17,6 @@ namespace Crack_IT_System.Controller {
 			var query = await _electricityRepo.SelectCities()
 				.ToListAsync();
 
-			foreach (var city in query) {
-				Debug.WriteLine($"{city.Id} - {city.Nazwa}");
-			}
-
 			return query;
 		}
 
