@@ -16,10 +16,9 @@ namespace Crack_IT_System.Db_Context {
 
 
 			protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-				// Konfiguracja Pomelo z określeniem wersji serwera MySQL
 				optionsBuilder.UseMySql(
 				    Settings.Default.SRV_Crack_IT_ConnString,
-				    new MySqlServerVersion(new Version(8, 0, 33)) // Podaj wersję swojego serwera MySQL
+				    new MySqlServerVersion(new Version(8, 0, 33))
 				);
 			}
 

@@ -25,10 +25,6 @@ namespace Crack_IT_System.Controller {
 			var query = await _electricityRepo.SelectCountries()
 				.ToListAsync();
 
-			foreach (var country in query) {
-				Debug.WriteLine($"{country.Id} - {country.Nazwa}");
-			}
-
 			return query;
 		}
 	}
