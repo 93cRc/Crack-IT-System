@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Crack_IT_System.Model.Electricity {
+namespace Crack_IT_System.Models.Electricity {
 	internal class Pomiary_elektryczne_wykonawcy {
 		[Key]
 		public uint Id { get; set; }

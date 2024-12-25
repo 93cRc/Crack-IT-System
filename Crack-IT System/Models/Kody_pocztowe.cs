@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Crack_IT_System.Model {
+namespace Crack_IT_System.Models {
 	internal class Kody_pocztowe {
 		[Key]
 		public uint Id { get; set; }

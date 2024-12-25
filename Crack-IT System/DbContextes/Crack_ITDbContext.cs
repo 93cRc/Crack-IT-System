@@ -1,10 +1,10 @@
-﻿using Crack_IT_System.Model;
-using Crack_IT_System.Model.Electricity;
+﻿using Crack_IT_System.Models;
+using Crack_IT_System.Models.Electricity;
 using Crack_IT_System.Properties;
 using Microsoft.EntityFrameworkCore;
 
-namespace Crack_IT_System.Db_Context {
-	internal class Crack_IT_DbContext {
+namespace Crack_IT_System.DbContextes {
+	internal class Crack_ITDbContext {
 		public class MyDbContext : DbContext {
 			public virtual DbSet<Kody_pocztowe> TbZipCodes { get; set; }
 			public virtual DbSet<Kraje> TbCountries { get; set; }

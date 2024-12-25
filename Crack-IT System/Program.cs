@@ -1,3 +1,5 @@
+using Crack_IT_System.Views;
+
 namespace Crack_IT_System {
 	internal static class Program {
 		/// <summary>
